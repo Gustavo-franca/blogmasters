@@ -10,20 +10,23 @@
        <div class="screen">
              <div class="login-screen background-secundary">
                 <div class="login-logo"><h1 class="title-logo"><a href="../index.html"> Blog Masters </a></h1></div>
-                <form action="">
+                <form action="https://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST">
                     <fieldset>
                         <legend hidden>Dados De login</legend>
-                        <label for="iUser">Nome de usuario</label>
-                        <input class ="form-input"type="text" name="nameUser" id="iUser">
-                        <label for="iPass">Senha</label>
-                        <input class ="form-input" type="text" name="userPass" id="iPass">
-                        <input class= "btn btn-primary btn-inline"type="button" value="Entrar">
-                        <a class="btn btn-secundary btn-inline" href="">Cadastre-se</a>
+                        <div class="form-div">
+                        <label class ="form-label" for="iUser">Nome de usuario</label>
+                        <input class ="form-input" type="text" name="nameUser" id="iUser" required>
+                        </div>
+                        <div class="form-div">
+                            <label class ="form-label" for="iPass">Senha</label>
+                            <input class ="form-input" type="password" name="userPass" id="iPass" required>
+                        </div>
+                        <input class= "btn btn-primary btn-inline mg-top"type="submit" value="Entrar">
+                        <a class="btn btn-secundary btn-inline mg-top" href="cadastro.html">Cadastre-se</a>
                     </fieldset>
                 </form>
             </div>
-
-
        </div>
+       <script src="../js/login.js"></script>
 </body>
 </html>
