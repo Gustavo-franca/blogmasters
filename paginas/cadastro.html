@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog Masters: Mostrando o melhor para você!</title>
+        <link rel="stylesheet" href="/Css/style.css">
+        <link rel="stylesheet" href="/Css/cadastro.css">
+    </head>
+<body>
+    <header id="header">   
+        <h2>BLOG Masters</h2> 
+        <nav class="menu">
+          
+            <ul>
+                <li><a href="../index.html">Menu</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="Sobre.html">Sobre</a></li> 
+                <li><a href="#">login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <div id="main-title">
+        <h1>Seja um Master</h1>
+        </div>
+        <div id="main">
+            <section >
+                <form class="form-register" action="mailto:naoqueremosseufeedback@naorespondemos.com.br" method="GET">
+                <fieldset class="form-border">
+                        <fieldset class="form-grid">
+                            <legend>informações De Cadastro</legend>
+                            <p><label for="iEmail">Email: </label>
+                                <input class="field-text" type="email" name="nEmail" id="iEmail" placeholder="Email" maxlength="40"  required >
+                            </p>
+                            <p> <label for="iSenha">Senha: </label>
+                                <input class="field-text" type="password" name="nSenha" id="iSenha" minlength="8" placeholder="Senha com no minimo 8 digitos" required>
+                            </p>
+                            <p> <label for="iRepSenha"> Repita a Senha: </label>
+                                <input class="field-text" type="password" name="nRepSenha" id="iRepSenha" minlength="8"  placeholder="Repita a senha" required>
+                            </p>
+                        </fieldset>
+                        <fieldset class="form-grid">
+                            <legend>Informações Pessoais</legend>
+                            <p><label for="iFistName">Nome:</label>
+                                <input class="field-text"type="text" name="nFistName" id="iFistName"  maxlength="50" placeholder="Nome(Ex: Pedro, Maria)" required>
+                                </p>
+                            <p><label for="iLastName">Sobrenome: </label>
+                                <input class="field-text" type="text" name="nLastName" id="iLastName" placeholder="Sobrenome(ex: Florentino)" maxlength="40"required >
+                            </p>
+                            <p> <label for="iNascDate">Data de nascimento: </label>
+                                <input  class="field-text" type="date" name="nNascDate" id="iNascDate">
+                            </p>
+                        </fieldset>
+                        <fieldset class="form-grid">
+                            <legend>Como Você nos conheceu?</legend>
+                            <p> <input type="radio" name="nHow" id="iPgoogle"  > <label for="iPgoogle">Pesquisas no Google</label></p>
+                            <p><input type="radio" name="nHow" id="iFriend" ><label for="iFriend">Amigos</label></p>
+                            <p><input type="radio" name="nHow" id="iRecomend" ><label for="iRecomend">Recomendaçoes de youtubers</label></p>
+                            <p><input type="radio" name="nHow" id="iOthers" checked ><label for="iOthers">Outro</label>
+                            <input type="text" name="nOthers" id="iTextOthers">
+                            </p>
+                        </fieldset>
+                        <fieldset class="form-grid">
+                            <legend>porque você deseja trabalhar com a gente?</legend>
+                            <p><textarea class="field-text" name="ndescricao" id="idescricao" maxlength="800" placeholder="Digite aqui ..."></textarea></p>
+                        </fieldset>
+                        <fieldset class="form-grid">
+                            <legend>Anexar Proposta</legend>
+                            <p> <label class="buttom" id="file-buttom" for="iFile">Anexar Arquivo</label>
+                            <input type="file" name="nFile" id="iFile"></p>
+                            
+                        </fieldset>
+                        <input class="buttom" type="submit" name="submit" value ="Cadastar">
+                    </fieldset>
+                </form>        
+
+            </section>
+        </div>
+    </main>
+    <footer id="footer"> 
+        <div id="footer-text">
+            <p>&copy;Gustavo Cândido França</p>
+            <p>All rigths Reserved@2019</p>
+        </div>
+    </footer>
+</body>
+</html>

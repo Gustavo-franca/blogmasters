@@ -1,0 +1,111 @@
+.screen{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.login-screen{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+}
+.title-logo{
+    margin: 0px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+  
+}
+.title-logo a{
+    text-transform: uppercase;
+    color: #fff8dc;
+    text-decoration: none;
+}
+.login-logo{
+    margin: 0px;
+    adding: 0px;
+    border-bottom: 2px solid #fff8dc;
+}
+fieldset{
+    border: none;
+    box-shadow: none;
+    margin: 5px;
+    padding: 0px;
+}
+.form-input {
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #fff8dc;
+    box-shadow: 1px 1px 2px #fff8dc;
+    border-radius: 10px;
+}
+.form-input:hover{
+    box-shadow: 1px 1px 2px #000;
+}
+.form-input:focus {
+    border: 1px solid #EA1B1B;
+    box-shadow: 1px 1px 2px #EA1B1B;
+    outline: 0;
+}
+.btn{
+    display: block;
+    margin: 10px 0px 0px 0px; 
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    border-radius: 40px;
+    text-align: center;
+    outline:0;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(0,0,0,0);
+    text-transform: uppercase;
+    border: 1px solid #fff8dc;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+.btn-primary{
+    background-color:#fff8dc;
+    border: 1px solid #fff8dc;
+    color:#EA1B1B ;
+}
+.btn-primary:hover{
+    background-color:#fffede;
+    border: 1px solid #dd2f03;
+    color:#EA1B1B ;
+}
+.btn-secundary{
+    background-color:#EA1B1B;
+    color:#fff8dc;
+}
+.btn-secundary:hover{
+    background-color:#EA1B1B;
+    border: 1px solid #dd2f03;
+    color:#fff8dc;
+}
+.btn-inline{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+
+
+
+@media screen and (min-width:535px) and (max-width: 900px){
+    .login-screen{
+        width: 380px;
+    }
+}
+@media screen and (max-width:535px){
+    .login-screen{
+        width: 70%;
+    }
+        
+}
+
+
