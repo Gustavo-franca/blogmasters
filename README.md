@@ -13,7 +13,7 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
      - Página De Edição de Perfil e Controle de Conteúdo
    - HomePage da aplicação que terá o intuito de atrair novos usuários e Mostrar Posts gerais da Plataforma
  
- Algumas Especificações Da Minha Faculdade
+ ## Algumas Especificações Da Minha Faculdade
  
    - O projeto precisa de 
      - Uma tabela (por isso criei um página de ranking)
