@@ -29,6 +29,53 @@
     font-weight: 500;
 
 }
+/* Botões padrão*/
+.btn{
+    box-sizing: border-box;
+    display: block;
+    margin: 0px 0px 0px 0px; 
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    border-radius: 40px;
+    text-align: center;
+    outline:0;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(0,0,0,0);
+    text-transform: uppercase;
+    border: 1px solid #fff8dc;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+.btn-primary{
+    background-color:#fff8dc;
+    border: 1px solid #fff8dc;
+    color:#EA1B1B ;
+}
+.btn-primary:hover{
+    background-color:#fffede;
+    border: 1px solid #dd2f03;
+    color:#EA1B1B ;
+}
+.btn-secundary{
+    background-color:#EA1B1B;
+    color:#fff8dc;
+}
+.btn-secundary:hover{
+    background-color:#EA1B1B;
+    border: 1px solid #dd2f03;
+    color:#fff8dc;
+}
+.btn-inline{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+/*Alterações padrões*/
+
+.mg-top{
+    margin-top: 30px;
+}
+
 
 
 /*definição de CSS*/
