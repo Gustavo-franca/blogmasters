@@ -6,20 +6,20 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
   
  O projeto Final Consiste em um Blog que tera as funcionalidades :
  
-    - Plataforma de Controle Dos Posts para Os criadores de Conteúdo
-    - Plataforma para Controle Adiministrativo da Aplicação para Os moderadores
-    - Plataforma de Interação dinâmica com o Usuario 
-      - Página inicial Com recomendações (links) de Posts
-      - Página De Edição de Perfil e Controle de Conteúdo
-    - HomePage da aplicação que terá o intuito de atrair novos usuários e Mostrar Posts gerais da Plataforma
+   - Plataforma de Controle Dos Posts para Os criadores de Conteúdo
+   - Plataforma para Controle Adiministrativo da Aplicação para Os moderadores
+   - Plataforma de Interação dinâmica com o Usuario 
+     - Página inicial Com recomendações (links) de Posts
+     - Página De Edição de Perfil e Controle de Conteúdo
+   - HomePage da aplicação que terá o intuito de atrair novos usuários e Mostrar Posts gerais da Plataforma
  
  Algumas Especificações Da Minha Faculdade
  
-    - O projeto precisa de 
-       - Uma tabela (por isso criei um página de ranking)
-       - Uma Galeria
-       - Uma Lista
-       - Posteriores pedidos do Professor
+   - O projeto precisa de 
+     - Uma tabela (por isso criei um página de ranking)
+     - Uma Galeria
+     - Uma Lista
+     - Posteriores pedidos do Professor
        
    Essas especificações poderão ou não ser removidas do projeto futuramente.
     
