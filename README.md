@@ -38,18 +38,18 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
    
  ## Sobre as tecnologias Adotadas
     
-    Neste projeto como consiste em aperfeiçoar a escrita e conhecimento sobre a linguagem de programação e organização de projeto irei
-    adotar 4 ferramente essensiais no desenvolvimento web. focando no uso nativo das linguagens evitando uso de frameworks no primeiro 
-    momento.
-      ferramentas adoras
+   Neste projeto como consiste em aperfeiçoar a escrita e conhecimento sobre a linguagem de programação e organização de projeto irei
+   adotar 4 ferramente essensiais no desenvolvimento web. focando no uso nativo das linguagens evitando uso de frameworks no primeiro 
+   momento.
+     ferramentas adoras
         Front-end:
           - html e CSS
           - Javascript
-        back-end:
+      back-end:
           - php
-    A arquitetura adota no projeto futuramente será MVC(model-view-controller) que ao decorrer do projeot será refatorado o código para 
-    essa estrutura que estarei estudando sua implementação.
-    Além da Arquitetura MVC penso em utilizar no projeto o paradiguima de Orientação a objeto(que anda lado a lado com a arquitetura MVC) com o intuito de praticar seus fundamentos na aplicação.
+   A arquitetura adota no projeto futuramente será MVC(model-view-controller) que ao decorrer do projeot será refatorado o código para 
+   essa estrutura que estarei estudando sua implementação.
+   Além da Arquitetura MVC penso em utilizar no projeto o paradiguima de Orientação a objeto(que anda lado a lado com a arquitetura MVC) com o intuito de praticar seus fundamentos na aplicação.
     
     ..
     
