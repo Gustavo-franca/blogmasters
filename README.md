@@ -35,6 +35,7 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
      - Posteriores pedidos do Professor
        
    Essas especificações poderão ou não ser removidas do projeto futuramente.
+   ![alt text](http://url/to/img.png)
    
  ## Sobre as tecnologias Adotadas
     
@@ -56,7 +57,8 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
    essa estrutura que estarei estudando sua implementação.
    Além da Arquitetura MVC penso em utilizar no projeto o paradiguima de Orientação a objeto(que anda lado a lado com a arquitetura MVC) com o intuito de praticar seus fundamentos na aplicação.
     
-    ..
+## Diagrama de caso de uso geral do sistema
+  
     
     
  ..
