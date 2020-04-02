@@ -43,10 +43,12 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
    momento.
    ferramentas adoras
    Front-end:
+   
     - html e CSS
     - Javascript
     
-   back-end:
+   Back-end:
+   
     - php
       
    A arquitetura adota no projeto futuramente será MVC(model-view-controller) que ao decorrer do projeot será refatorado o código para 
