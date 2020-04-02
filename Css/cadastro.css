@@ -67,9 +67,32 @@ fieldset legend{
    border-radius: 5px;
    border: 1px solid #000;
 }
+
 .form-register .field-text:focus{
     border: 1px solid #1e52e2;
     box-shadow: 1px 1px 4px #1e52e2;
+    outline-color:#1e52e2 ;
+}
+.form-register .field-danger,
+.form-register .field-danger:focus{
+    border: 1px solid #e6221b;
+    box-shadow: 1px 1px 4px #e6221b;
+    outline-color: #e6221b;
+ 
+}
+.form-register .field-warning,
+.form-register .field-warning:focus{
+    border: 1px solid #f8f413;
+    box-shadow: 1px 1px 4px #f8f413;
+    outline-color: #f8f413;
+ 
+}
+.form-register .field-success,
+.form-register .field-success:focus{
+    border: 1px solid #279730;
+    box-shadow: 1px 1px 4px #279730;
+    outline-color: #279730;
+ 
 }
 #iNascDate{
     border: 1px solid #000;
