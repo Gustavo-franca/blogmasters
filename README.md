@@ -41,15 +41,13 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
    Neste projeto como consiste em aperfeiçoar a escrita e conhecimento sobre a linguagem de programação e organização de projeto irei
    adotar 4 ferramente essensiais no desenvolvimento web. focando no uso nativo das linguagens evitando uso de frameworks no primeiro 
    momento.
-     ferramentas adoras
-      Front-end:
-      
-      - html e CSS
-      - Javascript
-      
-      back-end:
-      
-      - php
+   ferramentas adoras
+   Front-end:
+    - html e CSS
+    - Javascript
+    
+   back-end:
+    - php
       
    A arquitetura adota no projeto futuramente será MVC(model-view-controller) que ao decorrer do projeot será refatorado o código para 
    essa estrutura que estarei estudando sua implementação.
