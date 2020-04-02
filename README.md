@@ -44,12 +44,12 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
    ferramentas adoras
    Front-end:
    
-    - html e CSS
-    - Javascript
+   - Html e CSS
+   - Javascript
     
    Back-end:
    
-    - php
+   - Php
       
    A arquitetura adota no projeto futuramente será MVC(model-view-controller) que ao decorrer do projeot será refatorado o código para 
    essa estrutura que estarei estudando sua implementação.
