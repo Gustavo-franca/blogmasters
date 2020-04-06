@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog Masters: Mostrando o melhor para você!</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body class="background-default">
        <div class="screen">
@@ -22,7 +22,7 @@
                             <input class ="form-input" type="password" name="userPass" id="iPass" required>
                         </div>
                         <input class= "btn btn-primary btn-inline mg-top"type="submit" value="Entrar">
-                        <a class="btn btn-secundary btn-inline mg-top" href="cadastro.php">Cadastre-se</a>
+                        <a class="btn btn-secundary btn-inline mg-top" href="?pagina=cadastro.php">Cadastre-se</a>
                     </fieldset>
                 </form>
             </div>

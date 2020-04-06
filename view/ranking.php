@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Blog Masters: Mostrando o melhor para você!</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/ranking.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/ranking.css">
     </head>
 <body>
     <header id="header">   
@@ -12,10 +12,10 @@
         <nav class="menu">
           
             <ul>
-                <li><a href="index.php">Menu</a></li>
-                <li><a href="cadastro.php">Seja um Master </a></li> 
-                <li><a href="Sobre.php">Sobre</a></li> 
-                <li><a href="login.php">login</a></li>
+                <li><a href="?pagina=index">Menu</a></li>
+                <li><a href="?pagina=sobre">Sobre</a></li> 
+                <li><a href="?pagina=cadastro">Seja um Master </a></li> 
+                <li><a href="?pagina=login">login</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +28,7 @@
             <article>
                 <h2> Regras e instruções do Ranking</h2>,
                 <figure>
-                <img src="../imagens/narutohokage.jpg" alt="O melhor">
+                <img src="imagens/narutohokage.jpg" alt="O melhor">
                 </figure>
                 <ol type="1">
                     <li><p> Todos os membrons tem direito de participar</p></li>
