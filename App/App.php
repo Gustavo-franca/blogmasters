@@ -2,6 +2,7 @@
     namespace App;
 
     use App\Controllers\HomeController;
+    use exception;
 
 
     class App
@@ -12,13 +13,13 @@
         private $params;
         private $controllerName;
 
-        public function __contruct(){
+        public function __construct(){
             /*
             * Constantes Da aplicação
             */
 
-            define('APP_HOST'       ,$_SERVER['HTTP_HOST']."/homepage"); // link para inicialização da página
-            define('PATH'       ,    realpath('./')); // gerenciar Diretórios internos da aplicação
+            define('APP_HOST'       ,$_SERVER['HTTP_HOST']."/Projetos/blogmasters/"); // link para inicialização da página
+            define('PATH'       ,realpath("./")); // gerenciar Diretórios internos da aplicação
             define('TITLE'          ,"BlogMasters"); // utilização na view
             define('DB_HOST'        ,"localhost");//Configurações de banco - HOst
             define('DB_USER'        ,"root");//user
@@ -55,7 +56,7 @@
             return null;
         }
 
-        public function run(){
+        public function run(){// esta função utiliza o vetor e verifica se o controler as ações e os paraetros são validos e redireciona para o mesmo
             if($this->controller){//verica se o controller existe
                 $this->controllerName = ucwords($this->controller).'Controller'; // ucwords deixa a primeira lista maiscula
                 $this->controllerName = preg_replace('/[^a-zA-Z]/i','',$this->controllerName); // subtitue alguns carracteres do nome de acordo com a expressão regular
@@ -72,7 +73,7 @@
             }
 
             if(!file_exists(PATH . '/App/Controllers/' .$this->controllerFile)){
-                throw new Exception("Página não encontrada.",404);
+                throw new exception("Página não encontrada.",404);
             }
 
             $nomeClasse = "\\App\\Controllers\\".$this->controllerName; //garente que está classe estara no diretório Controller da aplicação
@@ -96,6 +97,9 @@
 
 
         }
+       public function getControllerName(){
+           return $this->controllerName;
+       }
 
         
 
