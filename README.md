@@ -1,6 +1,6 @@
 # Blog Masters
 
-Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens css, html, javascript e php com o objetivo de aperfeiçoar a minha habilidade com a organização de projeto e manipulação da linguagem E além disso servir como trabalho da faculdade :)
+Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens css, html, javascript e php com o objetivo de aperfeiçoar a minha habilidade com a organização de projeto , manipulação das linguagens e além disso servir como trabalho da faculdade :)
   
  ## Sobre as Especificações Gerais do Projeto
   
