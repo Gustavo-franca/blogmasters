@@ -2,7 +2,6 @@
 
   use App\App;
   use App\Lib\Erro;
-
   session_start();
 
   error_reporting(E_ALL & ~E_NOTICE); // não recebe erros de noticia (como funcões deprecate)

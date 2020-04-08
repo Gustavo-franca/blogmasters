@@ -1,4 +1,6 @@
 <?php
+    namespace App\Model\Entidades;
+    
     class Article 
     {
         // deve tratar um texto rebido do banco

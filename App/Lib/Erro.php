@@ -2,7 +2,7 @@
     
     namespace App\Lib;
     
-    use Exeption;
+    use exception;
 
     
     class Erro
