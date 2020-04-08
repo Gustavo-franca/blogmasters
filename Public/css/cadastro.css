@@ -1,0 +1,132 @@
+#main{
+    border:none;
+}
+#main section {
+    border:none
+}
+form.form-register{
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 75%;
+}
+fieldset{
+    border: none;
+}
+fieldset.form-border{
+    padding: 10px;
+    border: 1px solid #EA1B1B;
+    box-shadow: 1px 1px 4px #000;
+}
+fieldset legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px 0px 0px 0px;
+}
+
+.form-register fieldset.form-grid{
+    margin: 0px auto;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.buttom{
+    display: block;
+    cursor: pointer;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 10px 80px 10px 80px;
+    background-color: #EA1B1B;
+    border: 1px solid rgba(27, 26, 26,0.2);
+    box-shadow: 1px 1px rgb(184, 178, 178);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    text-shadow: 1px 1px #d64141;
+    border-radius: 12px;
+    color: #fff;
+}
+.form-register p{
+    margin-bottom:40px ;
+}
+.form-register label{
+    line-height: 40px;
+    font-size: 15pt;
+    font-weight: bold;
+    font-style: italic;
+}
+.form-register .field-text{
+   width: 100%;
+   height: 30px;
+   float: right;
+   border-radius: 5px;
+   border: 1px solid #000;
+}
+
+.form-register .field-text:focus{
+    border: 1px solid #1e52e2;
+    box-shadow: 1px 1px 4px #1e52e2;
+    outline-color:#1e52e2 ;
+}
+.form-register .field-danger,
+.form-register .field-danger:focus{
+    border: 1px solid #e6221b;
+    box-shadow: 1px 1px 4px #e6221b;
+    outline-color: #e6221b;
+ 
+}
+.form-register .field-warning,
+.form-register .field-warning:focus{
+    border: 1px solid #f8f413;
+    box-shadow: 1px 1px 4px #f8f413;
+    outline-color: #f8f413;
+ 
+}
+.form-register .field-success,
+.form-register .field-success:focus{
+    border: 1px solid #279730;
+    box-shadow: 1px 1px 4px #279730;
+    outline-color: #279730;
+ 
+}
+#iNascDate{
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    font-size: 15pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#iTextOthers{
+    opacity: 0;
+    cursor: default;
+}
+#iOthers:checked{
+    opacity: 1;
+    cursor: text;
+}
+#idescricao{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+#iFile{
+display: none;
+
+}
+label.buttom{
+    background-color: black;
+    display: block;
+    font-size: 10pt;
+    text-align: center;
+    text-shadow: 1px 1px 4px #aeaeae;
+    margin: 0px auto;
+    width: 150px;
+    padding: 0px;
+}

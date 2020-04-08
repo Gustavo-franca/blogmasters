@@ -1,0 +1,23 @@
+#main section article{
+    padding-bottom: 20px;
+}
+
+/*Formatação de tabelas de ranking */
+
+.ranking-table td,.ranking-table th,.ranking-table{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    margin: -2px;
+    background-color: #EA1B1B;
+    color: #fff;
+}
+.ranking-table{
+    border: 1px solid #000;
+    box-shadow: 1px 1px 4px #aeaeae;
+}
+
+ol{
+    display: inline-block;
+    padding-left: 10px;
+    width: 49%;
+}

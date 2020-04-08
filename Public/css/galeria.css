@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+#photo-album{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+#photo-album li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    /*margin retirado propositalmente*/
+    border: solid 1px #fff;
+    box-shadow: 1px 0px 3px rgba(0,0,0,.4); 
+    transition: all .4s ease-in;
+    overflow: hidden;
+}
+#photo-album li span{
+    opacity: 0;
+    display: block;
+    margin-top: 170px;
+    line-height: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+
+    padding: 5px;
+}
+#photo-album li:hover span{
+    opacity: 1;
+}
+#photo-album li:hover{
+   transform: scale(1.3);
+}
+#photo-album li#photo01{
+    background: url(../imagens/Funcionarios/Ana.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px; 
+    background-color: #ffffff;
+}
+#photo-album li#photo01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+#photo-album li#photo02{
+    background: url(../imagens/Funcionarios/Carlos.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px; 
+    background-color: #ffffff;
+}
+#photo-album li#photo02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+#photo-album li#photo03{
+    background: url(../imagens/Funcionarios/Felipe.jpg) no-repeat;
+    background-position:  100%;
+    background-size: 200px 200px; 
+    background-color: #ffffff;
+}
+#photo-album li#photo03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+#photo-album li#photo04{
+    background: url(../imagens/Funcionarios/Henrrique.jpg) no-repeat;
+    background-position: 100%;
+    background-size: 300px 200px; 
+    background-color: #ffffff;
+}
+/*Retirado por deformação da imagem*/
+
+#photo-album li#photo05{
+    background: url(../imagens/Funcionarios/Pedro.jpg) no-repeat;
+    background-position: 100%; 
+    background-size: 100%; 
+    background-color: #ffffff;
+}
+#photo-album li#photo06{
+    background: url(../imagens/Funcionarios/Sthepane.jpg) no-repeat;
+    background-position:50% 50%;
+    background-size: 200px 200px; 
+    background-color: #ffffff;
+}
