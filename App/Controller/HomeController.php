@@ -1,8 +1,15 @@
 <?php
 
+    require 'model/index.php';
     class HomeController 
     {
         function index(){
+
+            
+            $model = new Index();
+
+            $articles = $model->mainArticle();
+
             include 'view/index.php';
 
         }
