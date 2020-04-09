@@ -59,6 +59,6 @@ Este é um projeto tem o em desenvolver um blog do zero utilizando as linguagens
     
 ## Diagrama de caso de uso geral do sistema
   
-   ![alt text](https://github.com/Gustavo-franca/blogmasters/blob/master/imagens/Diagramas%20e%20fotos/Diagrama-geral-blogmasters.png) 
+   ![alt text](https://github.com/Gustavo-franca/blogmasters/blob/master/Public/imagens/Diagramas%20e%20fotos/Diagrama-geral-blogmasters.png) 
     
  ..
