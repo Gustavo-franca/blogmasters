@@ -61,13 +61,13 @@
                 $this->controllerName = ucwords($this->controller).'Controller'; // ucwords deixa a primeira lista maiscula
                 $this->controllerName = preg_replace('/[^a-zA-Z]/i','',$this->controllerName); // subtitue alguns carracteres do nome de acordo com a expressão regular
             }else{
-                $this->controllerName = "HomeController"; //pagina padrão
+                $this->controllerName = "HomeController"; //Controoler padrão
             }
 
             $this->controllerFile =$this->controllerName . ".php";
             $this->action = preg_replace('/[^a-zA-Z]/i','',$this->action);
 
-            if(!$this->controller){
+            if(!$this->controller){//se o controler não existir envia para HomeControler
                 $this->controller = new HomeController($this);
                 $this->controller->index();
             }
@@ -99,6 +99,9 @@
         }
        public function getControllerName(){
            return $this->controllerName;
+       }
+       public function getAction(){
+           return $this->action;
        }
 
         
