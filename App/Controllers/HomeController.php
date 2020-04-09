@@ -11,17 +11,12 @@
     {
         public function index(){
 
-            $articles = $this->mainArticle();
+           $this->setViewVar('nameArticles',$this->mainArticle());
 
             $this->render('home/index');
 
         }
-        function ranking(){
-            include 'view/ranking.php';
-        }
-        function sobre(){
-            include 'view/sobre.php';
-        }
+  
         function mainArticle(){
             // esse houver diversos articles cadastrados como principais
             //como será definido um articlo como principal
