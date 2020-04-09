@@ -14,10 +14,10 @@
         
 
         public function login(){
-            $this->render('login');
+            $this->render('usuario/login');
         }
         public function cadastro(){
-            $this->render('cadastro');
+            $this->render('usuario/cadastro');
         }
 
     }
