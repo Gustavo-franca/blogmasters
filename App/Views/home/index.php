@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog Masters: Mostrando o melhor para você!</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
 <main >
     <div id="main-title">
@@ -26,7 +18,7 @@
         <header>
         <h2>Principais Posts</h2>
         </header>
-        <?php foreach($articles as $article ){
+        <?php foreach($viewVar['nameArticles'] as $article ){
             echo $article;
         } ?>
     </section>
@@ -34,7 +26,7 @@
         <header>
         <h2>Principais Posts</h2>
         </header>
-        <?php foreach($articles as $article ){
+        <?php foreach($viewVar['nameArticles'] as $article ){
         echo $article;
         } ?>
     </section>

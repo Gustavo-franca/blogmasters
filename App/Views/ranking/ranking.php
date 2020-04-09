@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Blog Masters: Mostrando o melhor para você!</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/ranking.css">
-    </head>
-<body>
-    <header id="header">   
-        <h2>BLOG Masters</h2> 
-        <nav class="menu">
-          
-            <ul>
-                <li><a href="?pagina=index">Menu</a></li>
-                <li><a href="?pagina=sobre">Sobre</a></li> 
-                <li><a href="?pagina=cadastro">Seja um Master </a></li> 
-                <li><a href="?pagina=login">login</a></li>
-            </ul>
-        </nav>
-    </header>
+
     <main >
         <div id="main-title">
         <h1>Seja um Master</h1>
@@ -134,11 +114,3 @@
         </section>
         </div>
     </main>
-    <footer id="footer"> 
-        <div id="footer-text">
-            <p>&copy;Gustavo Cândido França</p>
-            <p>All rigths Reserved@2019</p>
-        </div>
-    </footer>
-</body>
-</html>

@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Blog Masters: Mostrando o melhor para você!</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/cadastro.css">
-    </head>
-<body>
-     <header id="header">   
-        <h2>BLOG Masters</h2> 
-        <h2>BLOG Masters</h2> 
-        <h2>BLOG Masters</h2> 
-            <nav class="menu">
-            <!-- Não irei poder mais mandar direto para view-->
-                <ul>
-                    <li><a href="?pagina=index">Menu</a></li>
-                    <li><a href="?pagina=ranking">Ranking</a></li>
-                    <li><a href="?pagina=sobre">Sobre</a></li> 
-                    <li><a href="?pagina=login">login</a></li>
-                </ul>
-            </nav>
-            <script src="../js/form.js"></script>
-    </header>
+
         <main >
             <div id="main-title">
             <h1>Seja um Master</h1>
@@ -94,14 +71,3 @@
                 </section>
             </div>
         </main>
-        <footer id="footer"> 
-            <div id="footer-text">
-                <p>&copy;Gustavo Cândido França</p>
-                <p>All rigths Reserved@2019</p>
-            </div>
-        </footer>
-        <!--<script src="../js/cadastro.js"></script>--> 
-        <!--<script src="../js/cadastro.js"></script>--> 
-        <!--<script src="../js/cadastro.js"></script>--> 
-    </body>
-</html>
