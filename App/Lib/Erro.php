@@ -2,7 +2,7 @@
     
     namespace App\Lib;
     
-    use exception;
+    use Exception;
 
     
     class Erro
@@ -10,7 +10,7 @@
         private $mensage;
         private $code;
 
-        public function __contruct($objetoExeption = Exception::class){ // inicializa a classe Exception nativa do PHP
+        public function __construct($objetoExeption = Exception::class){ // inicializa a classe Exception nativa do PHP
             $this->code = $objetoExeption->getCode(); // armazena os dados da exeção na váriavel da classe
             $this->message = $objetoExeption->getMessage();
         }
