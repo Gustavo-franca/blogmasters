@@ -3,7 +3,7 @@
   
     namespace App\Controllers;
     
-    use App\Model\Entidades\Article;
+    use App\Model\Entities\Article;
     
 
     

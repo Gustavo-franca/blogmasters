@@ -3,7 +3,7 @@
     namespace App\Controllers;
 
     use App\Model\DAO\UserDAO;
-    use App\Model\Entidades\User;
+    use App\Model\Entities\User;
     use App\Lib\Session;
 
     class UserController extends Controller
