@@ -1,5 +1,4 @@
 
-Drop database  blogmasters;
 Create Database blogmasters;
 use blogmasters;
 
