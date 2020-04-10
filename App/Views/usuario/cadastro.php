@@ -5,18 +5,18 @@
             </div>
             <div id="main">
                 <section >
-                    <form action="#" method="GET" class="form-register" onsubmit="return validaForm(this);" >
+                    <form action="<?php echo 'http://'.APP_HOST.'usuario/salvar'?>" method="POST" class="form-register"  >
                         <fieldset class="form-border">
                             <fieldset class="form-grid">
                                 <legend>informações De Cadastro</legend>
                                 <p><label id = "label-email" for="iEmail">Email: </label>
                                     <input class="field-text" type="text" name="nEmail" id="iEmail" placeholder="Email" maxlength="40">
                                 </p>
-                                <p> <label for="iSenha">Senha: </label>
-                                    <input class="field-text" type="password" name="nSenha" id="iSenha" minlength="8" placeholder="Senha com no minimo 8 digitos" >
+                                <p> <label for="iPassword">Senha: </label>
+                                    <input class="field-text" type="password" name="nPassword" id="iPassword" minlength="8" placeholder="Senha com no minimo 8 digitos" >
                                 </p>
-                                <p> <label for="iRepSenha"> Repita a Senha: </label>
-                                    <input class="field-text" type="password" name="nRepSenha" id="iRepSenha" minlength="8"  placeholder="Repita a senha" >
+                                <p> <label for="iRepPassword"> Repita a Senha: </label>
+                                    <input class="field-text" type="password" name="nRepPassword" id="iRepPassword" minlength="8"  placeholder="Repita a senha" >
                                 </p>
                             </fieldset>
                             <fieldset class="form-grid">
@@ -27,19 +27,19 @@
                                 <p><label for="iLastName">Sobrenome: </label>
                                     <input class="field-text" type="text" name="nLastName" id="iLastName" placeholder="Sobrenome(ex: Florentino)" maxlength="40" >
                                 </p>
-                                <p> <label for="iNascDate">Data de nascimento: </label>
-                                    <input  class="field-text" type="date" name="nNascDate" id="iNascDate">
+                                <p> <label for="iBirthDate">Data de nascimento: </label>
+                                    <input  class="field-text" type="date" name="nBirthDate" id="iBirthDate">
                                 </p>
-                                <p><label for="iRegiao">Regiao: </label>
-                                    <select class="field-text" name="nRegiao" id="iRegiao">
+                                <p><label for="iRegion">Regiao: </label>
+                                    <select class="field-text" name="nRegion" id="iRegion">
                                     
                                     <option value=""></option>
-                                    <option value="sUl">Sul</option>
-                                    <option value="suldeste"> Suldeste</option>
-                                    <option value="centro"> Centro</option>
-                                    <option value="centro-oeste"> Centro-oeste</option>
-                                    <option value="norte"> Norte</option>
-                                    <option value="nordeste"> Nordeste</option>
+                                    <option value="1">Sul</option>
+                                    <option value="2"> Suldeste</option>
+                                    <option value="3"> Centro</option>
+                                    <option value="4"> Centro-oeste</option>
+                                    <option value="5"> Norte</option>
+                                    <option value="6"> Nordeste</option>
                                 </select></p>
                             </fieldset>
                             <fieldset class="form-grid">
@@ -54,7 +54,7 @@
                             </fieldset>
                             <fieldset class="form-grid">
                                 <legend>porque você deseja trabalhar com a gente?</legend>
-                                <p><textarea class="field-text" name="ndescricao" id="idescricao" maxlength="800" placeholder="Digite aqui ..."></textarea></p>
+                                <p><textarea class="field-text" name="ndescrition" id="idescrition" maxlength="800" placeholder="Digite aqui ..."></textarea></p>
                             </fieldset>
                             <fieldset class="form-grid">
                                 <legend>Anexar Proposta</legend>

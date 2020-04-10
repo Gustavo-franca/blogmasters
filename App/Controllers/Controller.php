@@ -1,7 +1,7 @@
 <?php 
 
     namespace App\Controllers;
-    use App\Lib\Section;
+    use App\Lib\Session;
 
 
     abstract Class Controller  //uma classe abstract é uma classe que não pode ser instanciada diretamente, ou seja esse método só podera ser usado por seus filhos
@@ -18,7 +18,7 @@
         public function render($view){
 
             $viewVar = $this->getviewVar(); // passa as informações a view para poderem ser usadas
-            $section = Section::class; // possibilita mostrar ou não o menu??
+            $Session = Session::class; // possibilita mostrar ou não o menu??
             //paginas mostradas pela view
             require_once PATH .'\\App\\Views\\layouts\\header.php';
             require_once PATH .'\\App\\Views\\layouts\\menu.php';

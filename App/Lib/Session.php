@@ -2,26 +2,26 @@
     
     namespace App\Lib;
 
-    class Sessao {
+    class Session {
 
-        public static function gravaMensagem($mensagem){
-            $_SECTION['mensagem'] = $mensagem;
+        public static function gravarMensagem($mensagem){
+            $_SESSION['mensagem'] = $mensagem;
         }
         
         public static function limpaMensagem(){
-          unset(  $_SECTION['mensagem']);
+          unset(  $_SESSION['mensagem']);
         }
 
         public static function retornaMensagem(){
-            return ($_SECTION['mensagem'])?$_SECTION['mensagem']:"";
+            return ($_SESSION['mensagem'])?$_SECTION['mensagem']:"";
         }
 
         public static function gravarForm($form){
-            $_SECTION['form'] = $form;
+            $_SESSION['form'] = $form;
         }
 
         public static function limpaForm(){
-            unset($_SECTION['form']);
+            unset($_SESSION['form']);
         }
 
         public static function retornaValorForm($key){

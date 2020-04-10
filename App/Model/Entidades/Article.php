@@ -28,7 +28,7 @@
                 $header .= $descricao;
             }
             $img = '  <figure class="article-img">
-            <img src="imagens/narutohokage.jpg" alt="Uma foto do naruto com capa de hokage">
+            <img src="http://'. APP_HOST.'Public/imagens/narutohokage.jpg" alt="Uma foto do naruto com capa de hokage">
             <figcaption>Foto: Naruto hokage(opcional)</figcaption>
         </figure>';
             if($img != null){

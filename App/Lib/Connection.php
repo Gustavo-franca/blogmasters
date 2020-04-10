@@ -18,7 +18,7 @@
             try{
                 if(!isset($connection)){
                     $connection = new PDO($pdoConfig, DB_USER,DB_PASSWORD);
-                    $connection->serAtribute(PDO::ATTR_ERRMODE,PDO::ERROMODE_EXCEPTION);
+                    $connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 }
                 return $connection;
 

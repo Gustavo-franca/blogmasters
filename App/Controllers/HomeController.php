@@ -11,7 +11,7 @@
     {
         public function index(){
 
-           $this->setViewVar('nameArticles',$this->mainArticle());
+            $this->setViewVar('nameArticles',$this->mainArticle());
 
             $this->render('home/index');
 
