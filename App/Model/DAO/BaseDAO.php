@@ -1,8 +1,8 @@
 <?php
 
-    namespace App\Models\DAO;
+    namespace App\Model\DAO;
 
-    use App\lib\Conexao;
+    use App\lib\Connection;
 
     abstract class BaseDAO //classe não instansiavel! Classe com funções básicas de acesso ao Banco
     {
@@ -10,7 +10,7 @@
         //nessa classe posso criar implementações padrões como update , insert ,select e delete padrão para aplicação
         public function __construct()
         {
-            $this->conexao = Conexao::getConnection();
+            $this->connection = Connection::getConnection();
         }
 
         public function select($sql){
@@ -23,13 +23,13 @@
             if(!empty($table) && !empty($cols) && !empty($values))
             {
                 $parametros = $cols;
-                $colunas = str_replace(":",":",$cols);// a função utilizada pede que inserimos : para indicar a váriavel 
+                $colunas = str_replace(":","",$cols);// a função utilizada pede que inserimos : para indicar a váriavel 
                 //nesse caso presupomos que irá vir com :
 
                 $stmt = $this->connection->prepare("INSERT INTO $table($colunas) values ($parametros)");
                 $stmt->execute($values);
 
-                return $stml->rowCount();//retorna o numero de linhas afetas caso retornar 0 pode ter ocorrido um erro;
+                return $stmt->rowCount();//retorna o numero de linhas afetas caso retornar 0 pode ter ocorrido um erro;
             }else{
                 return false;
             }
