@@ -12,7 +12,7 @@
         public function __construct($app){
             $this->setViewVar('nameController',$app->getControllerName()); // devo criar a função getController
             if($string = $app->getAction()){
-                $this->setViewVar('nameAction',$this->$app->getAction());
+                $this->setViewVar('nameAction',$app->getAction());
             }
         }
         public function render($view){

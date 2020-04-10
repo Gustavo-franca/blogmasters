@@ -3,6 +3,7 @@
     namespace App\Controllers;
 
     use App\Controllers\Controller;
+    use App\Model\DAO\UsuarioDAO;
 
     class UsuarioController extends Controller
     {  
@@ -18,6 +19,13 @@
         }
         public function cadastro(){
             $this->render('usuario/cadastro');
+        }
+
+        public function salvar(){
+
+            $usuarioDAO = new UsuarioDAO();
+
+            
         }
 
     }
