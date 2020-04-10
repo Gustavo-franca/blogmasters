@@ -5,7 +5,7 @@
             </div>
             <div id="main">
                 <section >
-                    <form action="<?php echo 'http://'.APP_HOST.'usuario/salvar'?>" method="POST" class="form-register"  >
+                    <form action="<?php echo 'http://'.APP_HOST.'user/save'?>" method="POST" class="form-register"  >
                         <fieldset class="form-border">
                             <fieldset class="form-grid">
                                 <legend>informações De Cadastro</legend>

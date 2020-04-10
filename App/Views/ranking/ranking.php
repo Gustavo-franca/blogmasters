@@ -8,7 +8,7 @@
             <article>
                 <h2> Regras e instruções do Ranking</h2>,
                 <figure>
-                <img src="imagens/narutohokage.jpg" alt="O melhor">
+                <img src="http://<?php echo APP_HOST?>Public/imagens/narutohokage.jpg" alt="O melhor">
                 </figure>
                 <ol type="1">
                     <li><p> Todos os membrons tem direito de participar</p></li>
@@ -32,28 +32,28 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td><img src="../imagens/Funcionarios/Ana.jpg" alt="Foto de uma mulher"></td>
+                        <td><img src="http://<?php echo APP_HOST?>Public/imagens/Funcionarios/Ana.jpg" alt="Foto de uma mulher"></td>
                         <td>Boruto Usumaki</td>
                         <td>2500</td>
                         <td>10</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><img src="../imagens/Funcionarios/Carlos.jpg" alt="Foto de um homem"></td>
+                        <td><img src="http://<?php echo APP_HOST?>Public/imagens/Funcionarios/Carlos.jpg" alt="Foto de um homem"></td>
                         <td>Fernando</td>
                         <td>2500</td>
                         <td>10</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td><img src="../imagens/Funcionarios/Felipe.jpg" alt="Foto de um homem"></td>
+                        <td><img src="http://<?php echo APP_HOST?>Public/imagens/Funcionarios/Felipe.jpg" alt="Foto de um homem"></td>
                         <td>Felipe</td>
                         <td>2500</td>
                         <td>10</td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td><img src="../imagens/Funcionarios/Henrrique.jpg" alt="Foto de um homem"></td>
+                        <td><img src="http://<?php echo APP_HOST?>Public/imagens/Funcionarios/Henrrique.jpg" alt="Foto de um homem"></td>
                         <td>Felipe</td>
                         <td>1500</td>
                         <td>10</td>

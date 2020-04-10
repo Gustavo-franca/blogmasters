@@ -22,11 +22,11 @@
         public function insert($table , $cols, $values){
             if(!empty($table) && !empty($cols) && !empty($values))
             {
-                $parametros = $cols;
-                $colunas = str_replace(":","",$cols);// a função utilizada pede que inserimos : para indicar a váriavel 
+                $parameters = $cols;
+                $columns = str_replace(":","",$cols);// a função utilizada pede que inserimos : para indicar a váriavel 
                 //nesse caso presupomos que irá vir com :
 
-                $stmt = $this->connection->prepare("INSERT INTO $table($colunas) values ($parametros)");
+                $stmt = $this->connection->prepare("INSERT INTO $table($columns) values ($parameters)");
                 $stmt->execute($values);
 
                 return $stmt->rowCount();//retorna o numero de linhas afetas caso retornar 0 pode ter ocorrido um erro;

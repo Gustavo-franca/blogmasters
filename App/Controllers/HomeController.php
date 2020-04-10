@@ -16,13 +16,13 @@
             $this->render('home/index');
 
         }
-  
+        //essa função realmente seria aqui? a implementação da regras não! ela deve solicitar a outra classe! mas qual classe?
         function mainArticle(){
             // esse houver diversos articles cadastrados como principais
             //como será definido um articlo como principal
             for($i = 0; $i < 5;$i++){
-             $Article = new Article();
-             $mainArticles[ ] = $Article->fullarticle();
+             $article = new Article();
+             $mainArticles[ ] = $article->fullarticle();
             }
          
             return  $mainArticles;

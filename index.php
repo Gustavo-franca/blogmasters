@@ -3,7 +3,7 @@
 //1- refactor the code to english methods, classes and functions
 
   use App\App;
-  use App\Lib\Erro;
+  use App\Lib\Error;
   session_start();
 
   error_reporting(E_ALL & ~E_NOTICE); // you will not receive warning errors for deprecated methods or functions

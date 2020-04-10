@@ -1,5 +1,5 @@
 <?php
-    namespace App\Model\Entidades;
+    namespace App\Model\Entities;
     
     class Article 
     {
@@ -9,7 +9,7 @@
 
             $fullarticle = $this->header();
 
-            $fullarticle .= $this->conteudo();
+            $fullarticle .= $this->content();
 
             $fullarticle .= $this->footer();
 
@@ -43,8 +43,8 @@
         function footer(){
             //nesse caso pode haver apenas um autor
             $footer = '<footer><p class="article-copy">';
-            $mainAutor = 'Autor';
-            $footer .= $mainAutor;
+            $mainAuthor = 'Autor';
+            $footer .= $mainAuthor;
             // tratar data corretamente
             $date = ',<time datetime="2020-03-20 19:14"> {Data da Postagem}</time></p>';
             $footer .= $date;
@@ -52,9 +52,9 @@
 
             return $footer;
         }
-        function conteudo(){
+        function content(){
             // aqui tera os subtitulos, paragrafos imagens e etc.
-            $conteudo = ' <h4>Subtitulo do Artigo!(opcional)</h4>
+            $content = ' <h4>Subtitulo do Artigo!(opcional)</h4>
             <p class="descrition-sub-title">Descricao do primeiro tópico do artigo(opcional)</p>
             <p> Um tempo atrás eu fiz a análise do filme,<a href="#"> Boruto: O Filme – Análise</a>. E estava devendo uma análise da série, só estava precisando de um tempo para colocar os episódios em dia. Feito isso, vamos à análise!  </p>
 
@@ -78,7 +78,7 @@
                 Os episódios iniciais focam esses conflitos familiares e algumas heranças perdidas da guerra e da antiga era ninja. O foco dos conflitos é a nova geração, os medalhões são acionados apenas em casos extremos e muito pontuais.
             </p>';
 
-            return $conteudo;
+            return $content;
 
         }
 

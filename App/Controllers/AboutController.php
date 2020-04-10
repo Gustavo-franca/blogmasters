@@ -4,11 +4,11 @@
     namespace App\Controllers;
 
     
-    class SobreController extends Controller 
+    class AboutController extends Controller 
     {
         public function index(){
 
-            $this->render('sobre/sobre');
+            $this->render('about/about');
 
         }
     }

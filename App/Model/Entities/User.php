@@ -1,10 +1,10 @@
 <?php
 
-    namespace App\Model\Entidades;
+    namespace App\Model\Entities;
 
-    use App\Model\DAO\UsuarioDAO;
+    use App\Model\DAO\UserDAO;
 
-    class Usuario 
+    class User
     {  
         private $email;
         private $password;
@@ -17,12 +17,12 @@
         private $DAO;
 
         public function __construct(){
-            $this->DAO = new UsuarioDAO;
+            $this->DAO = new userDAO;
         }
 
 
         public function setEmail($email){
-            if(!$this->DAO->verificaEmail($email)){
+            if(!$this->DAO->checkEmail($email)){
                 $this->email = $email;
                 return true;
                 //poderia salvar diretamente com risco de não gravar outros dados
@@ -103,8 +103,8 @@
         public function getFile (){
             return $this->file;
         }
-        public function salvar(){ // como fazer
-            if($this->DAO->salvar($this)){//posso validar se essa região existe  
+        public function save(){ // como fazer
+            if($this->DAO->save($this)){//posso validar se essa região existe  
                 return true;
             }
             return false;  

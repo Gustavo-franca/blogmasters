@@ -4,30 +4,30 @@
 
     class Session {
 
-        public static function gravarMensagem($mensagem){
-            $_SESSION['mensagem'] = $mensagem;
+        public static function setMessage($messagem){
+            $_SESSION['message'] = $messagem;
         }
         
-        public static function limpaMensagem(){
-          unset(  $_SESSION['mensagem']);
+        public static function clearMessage(){
+          unset(  $_SESSION['message']);
         }
 
-        public static function retornaMensagem(){
-            return ($_SESSION['mensagem'])?$_SECTION['mensagem']:"";
+        public static function getMessage(){
+            return ($_SESSION['message'])?$_SECTION['message']:"";
         }
 
-        public static function gravarForm($form){
+        public static function recordsetForm($form){
             $_SESSION['form'] = $form;
         }
 
-        public static function limpaForm(){
+        public static function clearForm(){
             unset($_SESSION['form']);
         }
 
-        public static function retornaValorForm($key){
+        public static function getValorForm($key){
             return ($_SECTION['form'][$key])?$_SECTION['form'][$key]:"";
         }
-        public static function retornaForm($key){
+        public static function getForm($key){
             return ($_SECTION['form'])?$_SECTION['form']:"";
         }
 

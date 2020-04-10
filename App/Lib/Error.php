@@ -5,9 +5,9 @@
     use Exception;
 
     
-    class Erro
+    class Error
     {
-        private $mensage;
+        private $message;
         private $code;
 
         public function __construct($objetoExeption = Exception::class){ // inicializa a classe Exception nativa do PHP

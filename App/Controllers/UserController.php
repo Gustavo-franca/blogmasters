@@ -2,35 +2,35 @@
 
     namespace App\Controllers;
 
-    use App\Model\DAO\UsuarioDAO;
-    use App\Model\Entidades\Usuario;
+    use App\Model\DAO\UserDAO;
+    use App\Model\Entidades\User;
     use App\Lib\Session;
 
-    class UsuarioController extends Controller
+    class UserController extends Controller
     {  
         
         public function index(){ // aqui pode ser o index ou a home da aplicação para usuário etc 
-            header('Location: http://'.APP_HOST.'home'); 
+            header('Location: http://'.APP_HOST); // ao redirecionar a url o htaccess renvia os dados para o index indo para a home
 
         }
         
 
         public function login(){
-            $this->render('usuario/login');
-            Session::limpaMensagem();
-            Session::limpaForm();
+            $this->render('user/login');
+            Session::clearMessage();
+            Session::clearForm();
         }
-        public function cadastro(){
-            $this->render('usuario/cadastro');
-            Session::limpaMensagem();
-            Session::limpaForm();
+        public function register(){
+            $this->render('user/register');
+            Session::clearMessage();
+            Session::clearForm();
         }
 
-        public function salvar(){
+        public function save(){
 
-            $usuario = new Usuario();
+            $user = new User();
             $fieldError= [];
-            Session::gravarForm($_POST);
+            Session::setForm($_POST);
             //informações de login
             $email = $_POST['nEmail'];
             $password = $_POST['nPassword'];
@@ -46,49 +46,48 @@
             //anexo de corriculo(pdf, docs ,text, png, jpg)
             $file = $_POST['nFile'];
 
-            if(!$usuario->setEmail($email)){
+            if(!$user->setEmail($email)){
                 $fieldError['email'] = true; // por que não mandar o email?
             }
-            if(!$usuario->setPassword($password, $repPassword)){
+            if(!$user->setPassword($password, $repPassword)){
                 $fieldError['password'] = true; 
             }
-            if(!$usuario->setFistName($fistName)){
+            if(!$user->setFistName($fistName)){
                 $fieldError['fistName'] = true; 
             }
-            if(!$usuario->setLastName($lastName)){
+            if(!$user->setLastName($lastName)){
                 $fieldError['lastName'] = true; 
             }
-            if(!$usuario->setBirthDate($birthDate)){
+            if(!$user->setBirthDate($birthDate)){
                 $fieldError['birthDate'] = true; 
             }
-            if(!$usuario->setRegion($region)){
+            if(!$user->setRegion($region)){
                 $fieldError['region'] = true; 
              
             }
-            if(!$usuario->setFile($file)){
+            if(!$user->setFile($file)){
                 $$fieldError['file'] = true; 
             }
            if(isset($fieldError )){   
                 if(count($fieldError) > 0){
                     //se houver erros mando de volta para login
                     $this->setviewVar('fieldError',$fieldError);
-                    Session::gravarMensagem("Os dados em vermelho estão incorretos por favor verifique os dados e tente novamente!");
-                    header('Location: http://'.APP_HOST.'usuario/cadastro');
-                  //  header('Location : http://'.APP_HOST.'usuario/cadastro');
-                    $this->render('usuario/cadastro');
-                   
+                    Session::setMessage("Os dados em vermelho estão incorretos por favor verifique os dados e tente novamente!");
+                    header('Location: http://'.APP_HOST.'user/register');//redirecionar url para aparecer como cadastro a tela
+                    $this->render('user/register');
+                    Session::clearMessage();
+                    Sessio::clearForm();
                     return;
                 }
             }
-            if($usuario->salvar()){
-                Session::gravarMensagem($usuario->getFistName());
-                $this->render('usuario/sucesso');
+            if($user->salvar()){
+                Session::setMessage($user->getFistName());
+                $this->render('user/success');
+                Session::clearMessage();
+                Sessio::clearForm();
             }else{
-                Session::gravarMensagem("Erro Ao gravar, por favor tente novamente mais tarde");
+                Session::setMessage("Erro Ao gravar, por favor tente novamente mais tarde");
             }
         }
-
     }
-
-
 ?>

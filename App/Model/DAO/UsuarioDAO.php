@@ -2,12 +2,12 @@
 
     namespace App\Model\DAO;
 
-    use App\Model\Entidades\Usuario;
+    use App\Model\Entities\user;
     use DateTime;
 
-    class UsuarioDAO extends BaseDAO 
+    class userDAO extends BaseDAO 
     {
-        public function verificaEmail($email){
+        public function checkEmail($email){
 
             try{
                $query =  $this->select(
@@ -22,15 +22,15 @@
 
         }
 
-        public function salvar($usuario){
-            $idAttachment = 1;
-            $registrationDate = '2020-04-10 14:30:30';
-            $fistName = $usuario->getFistName();
-            $lastName = $usuario->getLastName();
-            $email = $usuario->getEmail();
-            $password = $usuario->getPassword();
-            $birthDate = $usuario->getBirthDate();
-            $idRegion = $usuario->getRegion();
+        public function save($user){
+            $idAttachment = 1; // tratar coorretamente
+            $registrationDate = '2020-04-10 14:30:30'; // tratar corretamente
+            $fistName = $user->getFistName();
+            $lastName = $user->getLastName();
+            $email = $user->getEmail();
+            $password = $user->getPassword();
+            $birthDate = $user->getBirthDate();
+            $idRegion = $user->getRegion(); //inserir dados iniciais no banco
             
            
            

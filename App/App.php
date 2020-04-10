@@ -2,7 +2,7 @@
     namespace App;
 
     use App\Controllers\HomeController;
-    use exception;
+    use Exception;
 
 
     class App
@@ -10,7 +10,7 @@
         private $controller;
         private $controllerFile;
         private $action;
-        private $params;
+        private $parameters;
         private $controllerName;
 
         public function __construct(){
@@ -35,21 +35,21 @@
 
             if(isset($_GET['url'])){
                $path = $_GET['url'];
-               $path = rtrim($path, '/'); // retira espaçoes em branco e o ultimo / da url
+               $path = rtrim($path, '/'); // retira o ultimo / da url
 
                $path = explode('/', $path); // tranforma em um array (delimitador, String)
 
-               $this->controller = $this->verificaArray($path, 0);
-               $this->action = $this->verificaArray($path, 1);
+               $this->controller = $this->checkArray($path, 0);
+               $this->action = $this->checkArray($path, 1);
 
-               if($this->verificaArray($path,2)){
+               if($this->checkArray($path,2)){
                 unset($path[0]);   
                 unset($path[1]);// retira os dados  controller a ação   
-                $this->params = array_values($path); // adicioan os n parametros a  váriavel
+                $this->parameters = array_values($path); // adicioan os n parametros a  váriavel
                }
             }
         }
-        public function verificaArray($array, $key){
+        public function checkArray($array, $key){
             if(isset($array[$key])&& !empty($array[$key])){
                 return $array[$key];
             }
@@ -76,19 +76,19 @@
                 throw new exception("Página não encontrada.",404);
             }
 
-            $nomeClasse = "\\App\\Controllers\\".$this->controllerName; //garente que está classe estara no diretório Controller da aplicação
-            $objetoController = new $nomeClasse($this);
+            $className = "\\App\\Controllers\\".$this->controllerName; //garente que está classe estara no diretório Controller da aplicação
+            $objectController = new $className($this);
 
-            if(!class_exists($nomeClasse)){
+            if(!class_exists($className)){
                 throw new Exception("Erro na aplicação",500);
             }
 
 
-            if(method_exists($objetoController,$this->action)){ // verifica se o método existe
-                $objetoController->{$this->action}($this->params); // chama a action e envia os parametros para a classe controller
+            if(method_exists($objectController,$this->action)){ // verifica se o método existe
+                $objectController->{$this->action}($this->parameters); // chama a action e envia os parametros para a classe controller
                 return;
-            }else if(!$this->action && method_exists($objetoController,'index')){ // caso não houver uma action ele irá chamar a action index e irá inserior os params para o index
-                $objetoController->index($this->params); // se for levar em conta não terá como os parametros chegarem até aqui pois serão considerado uma action
+            }else if(!$this->action && method_exists($objectController,'index')){ // caso não houver uma action ele irá chamar a action index e irá inserior os parameters para o index
+                $objectController->index($this->parameters); // se for levar em conta não terá como os parametros chegarem até aqui pois serão considerado uma action
                 return;
             }else{
                 throw new Exception("Nosso suporte já esta verificando, Desculpe",500);
