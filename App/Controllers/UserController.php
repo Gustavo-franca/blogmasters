@@ -13,7 +13,25 @@
             header('Location: http://'.APP_HOST); // ao redirecionar a url o htaccess renvia os dados para o index indo para a home
 
         }
-        
+        public function dashboard(){
+            if(isset($_POST['nEmail']) && isset($_POST['nPassword'])){
+                $user = new user();
+                $user->setEmail($_POST['nEmail']);
+                $user->setpassword($_POST['nPassword'],$_POST['nPassword']);
+                if($user->login()){
+                    Session::setMessage("Bem vindo ".$user->getfistName()." ".$user->getlastName());
+                    $this->render('user/dashboard');
+                    return;
+                }else{
+                    $_SESSION['message'] = false;
+                    $this->render('user/login');
+                    return;
+                }
+            }
+            Session::setMessage('Opa, Temos um bisbiliotão aqui');
+            $this->render('user/dashboard');
+            Session::clearMessage();
+        }
 
         public function login(){
             $this->render('user/login');
@@ -76,15 +94,15 @@
                     header('Location: http://'.APP_HOST.'user/register');//redirecionar url para aparecer como cadastro a tela
                     $this->render('user/register');
                     Session::clearMessage();
-                    Sessio::clearForm();
+                    Session::clearForm();
                     return;
                 }
             }
-            if($user->salvar()){
+            if($user->save()){
                 Session::setMessage($user->getFistName());
                 $this->render('user/success');
                 Session::clearMessage();
-                Sessio::clearForm();
+                Session::clearForm();
             }else{
                 Session::setMessage("Erro Ao gravar, por favor tente novamente mais tarde");
             }
