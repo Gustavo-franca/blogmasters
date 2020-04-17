@@ -4,6 +4,10 @@
 
     class Session {
 
+        public static function notshownav(){
+            $_SESSION['nav'] = true;
+        }
+        
         public static function setMessage($messagem){
             $_SESSION['message'] = $messagem;
         }
@@ -16,14 +20,13 @@
             return ($_SESSION['message'])?$_SECTION['message']:"";
         }
 
-        public static function recordsetForm($form){
+        public static function setForm($form){
             $_SESSION['form'] = $form;
         }
 
         public static function clearForm(){
             unset($_SESSION['form']);
         }
-
         public static function getValorForm($key){
             return ($_SECTION['form'][$key])?$_SECTION['form'][$key]:"";
         }
