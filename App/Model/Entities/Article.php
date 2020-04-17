@@ -17,7 +17,7 @@
         }
         
         function header(){
-            $header = '<article><header><h3>';
+            $header = '<article><header> <div class =" titulo-principal col-12 text-justified"><h3>';
 
             $mainTitle = 'Titulo principal do Artigo';
             
@@ -35,7 +35,7 @@
                 $header .= $img;
             }
 
-            $header .= '</header>';
+            $header .= '</div></header>';
 
             return $header;
         }
@@ -54,29 +54,20 @@
         }
         function content(){
             // aqui tera os subtitulos, paragrafos imagens e etc.
-            $content = ' <h4>Subtitulo do Artigo!(opcional)</h4>
-            <p class="descrition-sub-title">Descricao do primeiro tópico do artigo(opcional)</p>
-            <p> Um tempo atrás eu fiz a análise do filme,<a href="#"> Boruto: O Filme – Análise</a>. E estava devendo uma análise da série, só estava precisando de um tempo para colocar os episódios em dia. Feito isso, vamos à análise!  </p>
-
-            <p> aruto está morto (ou pelo menos é o que se quer dar a entender) e a era dos ninjas acabou!<br>
-                Mas essa é só uma chamada impactante para fisgar o fã. Lembra o <a href="#">LINK <a>  
-            </p>
-            <h4>Subtitulo do Artigo!(opcional)</h4>
-            <p class="descrition-sub-title">Descricao do primeiro tópico do artigo(opcional)</p>
-
-            <p> <strong> negrito </strong>
-                A cena inicial já avisa que é algo de muitos anos a frente.                
-                Então a história em si de Boruto se passa 15 anos após a 4ª Grande Guerra Ninja.                
-                Boruto (filho de Hinata e Naruto), Sarada (filha de Sasuke e Sakura) e outros filhos de personagens conhecidos por todos estão na academia ninja.                
-            </p>
-
-            <p>  Naruto é o Hokage, Shikamaru seu principal conselheiro. Ocupadíssimo com os deveres de comandar     a    vila, Naruto tem pouco tempo para a família, resultando na revolta de Boruto. Assim como Sasuke nunca está por perto, deixando um vazio para Sarada e Sakura.
-
-            </p> 
-
-            <p>   
-                Os episódios iniciais focam esses conflitos familiares e algumas heranças perdidas da guerra e da antiga era ninja. O foco dos conflitos é a nova geração, os medalhões são acionados apenas em casos extremos e muito pontuais.
-            </p>';
+            $content = '
+            <div class = "conteudo ">
+                <h4>Titulo Secundário</h4>
+                <p class ="text-justify">PRIMEIRO PARAGRAFO -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis enim sit amet laoreet facilisis. Aenean placerat elit neque, vitae bibendum nisl fringilla ac. Mauris maximus in metus consequat euismod. Nullam id odio placerat, varius nisl non, bibendum nulla. Nulla posuere gravida dolor ac semper. Sed libero mauris, dapibus in purus eget, molestie malesuada ante. Vestibulum condimentum placerat ligula, quis tempor erat interdum sit amet. Pellentesque porttitor posuere tellus, id placerat sapien. Suspendisse finibus tincidunt quam pretium sollicitudin. Fusce                 malesuada, quam eget rhoncus tristique, ante orci volutpat orci, et porta augue ligula quis elit. Nulla ac faucibus lorem, faucibus sollicitudin tellus. Etiam lacus leo, aliquet eget urna vel, sagittis ultrices enim. Sed at suscipit nulla, in porttitor est. Aliquam mollis nunc id mi mattis cursus. Phasellus tempus rhoncus consectetur. </p>
+                <h4>Titulo Secundário</h4>
+                <p class ="text-justify">SEGUNDO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis enim sit amet laoreet facilisis. Aenean placerat elit neque, vitae bibendum nisl fringilla ac. Mauris maximus in metus consequat euismod. Nullam id odio placerat, varius nisl non, bibendum nulla. Nulla posuere gravida dolor ac semper. Sed libero mauris, dapibus in purus eget, molestie malesuada ante. Vestibulum condimentum placerat ligula, quis tempor erat interdum sit amet. Pellentesque porttitor posuere tellus, id placerat sapien. Suspendisse finibus tincidunt quam pretium sollicitudin. Fusce malesuada, quam eget rhoncus tristique, ante orci volutpat orci, et porta augue ligula quis elit. Nulla ac faucibus lorem, faucibus sollicitudin tellus. Etiam lacus leo, aliquet eget urna vel, sagittis ultrices enim. Sed at suscipit nulla, in porttitor est. Aliquam mollis nunc id mi mattis cursus. Phasellus tempus rhoncus consectetur.</p>
+                <p class ="text-justify"> TERCEIROLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis enim sit amet laoreet facilisis. Aenean placerat elit neque, vitae bibendum nisl fringilla ac. Mauris maximus in metus consequat euismod. Nullam id odio placerat, varius nisl non, bibendum nulla. Nulla posuere gravida dolor ac semper. Sed libero mauris, dapibus in purus eget, molestie malesuada ante. Vestibulum condimentum placerat ligula, quis tempor erat interdum sit amet. Pellentesque porttitor posuere tellus, id placerat sapien. Suspendisse finibus tincidunt quam pretium sollicitudin. Fusce malesuada, quam eget rhoncus tristique, ante orci volutpat orci, et porta augue ligula quis elit. Nulla ac faucibus lorem, faucibus sollicitudin tellus. Etiam lacus leo, aliquet eget urna vel, sagittis ultrices enim. Sed at suscipit nulla, in porttitor est. Aliquam mollis nunc id mi mattis cursus. Phasellus tempus rhoncus consectetur.</p>
+                <h4>Titulo Secundário</h4>
+                <p class ="text-justify">QUARTOLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis enim sit amet laoreet facilisis. Aenean placerat elit neque, vitae bibendum nisl fringilla ac. Mauris maximus in metus consequat euismod. Nullam id odio placerat, varius nisl non, bibendum nulla. Nulla posuere gravida dolor ac semper. Sed libero mauris, dapibus in purus eget, molestie malesuada ante. Vestibulum condimentum placerat ligula, quis tempor erat interdum sit amet. Pellentesque porttitor posuere tellus, id placerat sapien. Suspendisse finibus tincidunt quam pretium sollicitudin. Fusce malesuada, quam eget rhoncus tristique, ante orci volutpat orci, et porta augue ligula quis elit. Nulla ac faucibus lorem, faucibus sollicitudin tellus. Etiam lacus leo, aliquet eget urna vel, sagittis ultrices enim. Sed at suscipit nulla, in porttitor est. Aliquam mollis nunc id mi mattis cursus. Phasellus tempus rhoncus consectetur.</p>
+                <p class ="text-justify">QUINTO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis enim sit amet laoreet facilisis. Aenean placerat elit neque, vitae bibendum nisl fringilla ac. Mauris maximus in metus consequat euismod. Nullam id odio placerat, varius nisl non, bibendum nulla. Nulla posuere gravida dolor ac semper. Sed libero mauris, dapibus in purus eget, molestie malesuada ante. Vestibulum condimentum placerat ligula, quis tempor erat interdum sit amet. Pellentesque porttitor posuere tellus, id placerat sapien. Suspendisse finibus tincidunt quam pretium sollicitudin. Fusce malesuada, quam eget rhoncus tristique, ante orci volutpat orci, et porta augue ligula quis elit. Nulla ac faucibus lorem, faucibus sollicitudin tellus. Etiam lacus leo, aliquet eget urna vel, sagittis ultrices enim. Sed at suscipit nulla, in porttitor est. Aliquam mollis nunc id mi mattis cursus. Phasellus tempus rhoncus consectetur.</p>
+                <h4>Titulo Secundário</h4>
+                <p class ="text-justify">SEXTOLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis enim sit amet laoreet facilisis. Aenean placerat elit neque, vitae bibendum nisl fringilla ac. Mauris maximus in metus consequat euismod. Nullam id odio placerat, varius nisl non, bibendum nulla. Nulla posuere gravida dolor ac semper. Sed libero mauris, dapibus in purus eget, molestie malesuada ante. Vestibulum condimentum placerat ligula, quis tempor erat interdum sit amet. Pellentesque porttitor posuere tellus, id placerat sapien. Suspendisse finibus tincidunt quam pretium sollicitudin. Fusce malesuada, quam eget rhoncus tristique, ante orci volutpat orci, et porta augue ligula quis elit. Nulla ac faucibus lorem, faucibus sollicitudin tellus. Etiam lacus leo, aliquet eget urna vel, sagittis ultrices enim. Sed at suscipit nulla, in porttitor est. Aliquam mollis nunc id mi mattis cursus. Phasellus tempus rhoncus consectetur.</p>
+                <p class ="text-justify">SETIMOLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis enim sit amet laoreet facilisis. Aenean placerat elit neque, vitae bibendum nisl fringilla ac. Mauris maximus in metus consequat euismod. Nullam id odio placerat, varius nisl non, bibendum nulla. Nulla posuere gravida dolor ac semper. Sed libero mauris, dapibus in purus eget, molestie malesuada ante. Vestibulum condimentum placerat ligula, quis tempor erat interdum sit amet. Pellentesque porttitor posuere tellus, id placerat sapien. Suspendisse finibus tincidunt quam pretium sollicitudin. Fusce malesuada, quam eget rhoncus tristique, ante orci volutpat orci, et porta augue ligula quis elit. Nulla ac faucibus lorem, faucibus sollicitudin tellus. Etiam lacus leo, aliquet eget urna vel, sagittis ultrices enim. Sed at suscipit nulla, in porttitor est. Aliquam mollis nunc id mi mattis cursus. Phasellus tempus rhoncus consectetur.</p>
+            </div>';
 
             return $content;
 
