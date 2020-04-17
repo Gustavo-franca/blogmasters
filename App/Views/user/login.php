@@ -3,16 +3,16 @@
        <div class="screen">
              <div class="login-screen background-secundary">
                 <div class="login-logo"><h1 class="title-logo"><a href="../index.html"> Blog Masters </a></h1></div>
-                <form action="<?php echo 'http://'. APP_HOST?>user/login" method="POST">
+                <form action="<?php echo 'http://'. APP_HOST?>user/dashboard" method="POST">
                     <fieldset>
                         <legend hidden>Dados De login</legend>
                         <div class="form-div">
-                        <label class ="form-label" for="iUser">Nome de usuario</label>
-                        <input class ="form-input" type="text" name="userName" id="iUser" required>
+                        <label class ="form-label" for="iEmail">Nome de usuario</label>
+                        <input class ="form-input" type="email" name="nEmail" id="iEmail" required>
                         </div>
                         <div class="form-div">
                             <label class ="form-label" for="iPass">Senha</label>
-                            <input class ="form-input" type="password" name="userPass" id="iPass" required>
+                            <input class ="form-input" type="password" name="nPassword" id="iPass" required>
                         </div>
                         <input class= "btn btn-primary btn-inline mg-top"type="submit" value="Entrar">
                         <a class="btn btn-secundary btn-inline mg-top" href="<?php echo 'http://'. APP_HOST?>user/register">Cadastre-se</a>

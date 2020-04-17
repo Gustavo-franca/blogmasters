@@ -1,8 +1,10 @@
 
     <main >
-        <div id="main-title">
-        <h1>Seja um Master</h1>
+    <div class = "container-fluid  bg-dark mb-4 " id="main-title">
+             <h1 class ="col-12 text-center text-white title-font m-0 ">Ranking Dos Masters</h1>
         </div>
+     
+
         <div id="main">
             <section>
             <article>

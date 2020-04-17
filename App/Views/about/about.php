@@ -1,8 +1,8 @@
 
         <main >
-            <div id="main-title">
-                <h1>Sobre nós e nosso trabalho</h1>
-            </div>
+        <div class = "container-fluid  bg-dark mb-4 " id="main-title">
+             <h1 class ="col-12 text-center text-white title-font m-0 ">Sobre nós e nosso trabalho</h1>
+        </div>
             <div id="main">   
                 <section>   
                     <h2>A História da Blog Masters</h2>    
