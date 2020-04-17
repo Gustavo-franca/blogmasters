@@ -27,18 +27,17 @@
                 return true;
                 //poderia salvar diretamente com risco de não gravar outros dados
                 //tendo que deletar depois 
+                //validando aqui não consigo usar essa função normalmente para manipular possiveis usuários ou usar login
             }
+            $this->email = $email;
             return false;
         }
 
      
 
-        public function setPassword($password, $repPassword){
-            if($password == $repPassword){
-                $this->password = $password;
-                return true;
-            }
-            return false;
+        public function setPassword($password){
+            $this->password = $password;
+            return true;
         }
 
         public function setFistName($fistName){
@@ -103,11 +102,18 @@
         public function getFile (){
             return $this->file;
         }
-        public function save(){ // como fazer
-            if($this->DAO->save($this)){//posso validar se essa região existe  
+        public function save(){ 
+            if($this->DAO->save($this)){
                 return true;
             }
             return false;  
+        }
+
+        public function login(){
+            if($this->DAO->login($this)){
+                return true;
+            }
+            return false;
         }
         
 
