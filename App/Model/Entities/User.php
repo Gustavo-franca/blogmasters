@@ -6,6 +6,7 @@
 
     class User
     {  
+        private $id;
         private $email;
         private $password;
         private $fistName;
@@ -20,7 +21,20 @@
             $this->DAO = new userDAO;
         }
 
-
+        private function setid($id){
+            if(!$this->id){
+                if($id != false){
+                    $this->id = $id;
+                    return true;
+                }
+            }
+            return false;
+        }
+        public function getId(){
+            if($this->id){
+                return $this->id;    
+           } 
+         }
         public function setEmail($email){
             if(!$this->DAO->checkEmail($email)){
                 $this->email = $email;
@@ -110,7 +124,7 @@
         }
 
         public function login(){
-            if($this->DAO->login($this)){
+            if($this->setid($this->DAO->login($this))){
                 return true;
             }
             return false;
