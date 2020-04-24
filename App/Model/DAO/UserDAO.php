@@ -25,7 +25,7 @@
             try{
             $query = $this->select(
 
-                "SELECT fistName,lastName,email,password FROM user WHERE
+                "SELECT idUser,fistName,lastName,email,password FROM user WHERE
                 email = '".$user->getEmail()."' AND password = '".$user->getpassword()."'"
             );
             if($query->rowCount() > 1){
@@ -34,11 +34,12 @@
            if($query){
                $return =false;
                 foreach ($query as $row) {
+                   
                     $user->setFistName($row['fistName']);
                     $user->setLastName($row['lastName']);
                     $user->setEmail($row['email']);
                     $user->setPassword($row['password']);
-                    $return =true;
+                    $return =$row['idUser'];
                 }
                 
             }
