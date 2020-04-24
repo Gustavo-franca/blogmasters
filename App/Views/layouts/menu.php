@@ -1,6 +1,10 @@
 
-
- 
+<?php
+$bool = $Session::getshownav();
+if(!$bool){
+        return;
+}
+?>
 <header>    
                 <nav class = "navbar navbar-expand-lg navbar-dark bg-danger">
                     <a class="navbar-brand text-uppercase" href="<?php echo 'http://'. APP_HOST?>home">BLOG MAsters</a>
@@ -13,8 +17,22 @@
                             <li class = "nav-item "><a class="nav-link <?php if($viewVar['nameController'] == 'HomeController')echo 'active'; ?>" href="<?php echo 'http://'. APP_HOST?>home">Home</a></li>
                             <li class = "nav-item"><a class = "nav-link <?php if($viewVar['nameController'] == 'RankingController')echo 'active'; ?>" href="<?php echo 'http://'. APP_HOST?>ranking">Ranking</a></li>
                             <li class = "nav-item "><a class = "nav-link <?php if($viewVar['nameController'] == 'AboutController')echo 'active'; ?>" href="<?php echo 'http://'. APP_HOST?>about">Sobre</a></li> 
-                            <li class ="nav-item "><a class="nav-link <?php if($viewVar['nameAction'] == 'register')echo 'active'; ?>" href="<?php echo 'http://'. APP_HOST?>user/register">Seja um Master </a></li> 
-                            <li class = "nav-item"><a class = "nav-link <?php if($viewVar['nameAction'] == 'login')echo 'active'; ?>" href="<?php echo 'http://'. APP_HOST?>user/login">login</a></li>
+                            <li class ="nav-item "><a class="nav-link <?php if(isset($viewVar['nameAction']) && $viewVar['nameAction'] == 'register')echo 'active'; ?>" href="<?php echo 'http://'. APP_HOST?>user/register">Seja um Master </a></li> 
+                            
+                            <li class = "nav-item">
+                            <?php
+                            $tagLink ='<a class = "nav-link ';
+                            if(!isset($_SESSION['user'])){
+                                if(isset($viewVar['nameAction']) && $viewVar['nameAction'] == 'login'){
+                                    $tagLink .= 'active';
+                                }
+                                $tagLink .='" href=" http://'. APP_HOST.'user/login">'.'Login'.'</a>';
+                            }else{
+                                $tagLink .='" href=" http://'. APP_HOST.'dashboard">'.'Dashboard'.'</a>';
+                            }
+                             echo $tagLink;
+                            ?>
+                            </li>
                         </ul>
                     </div>
                 </nav>
