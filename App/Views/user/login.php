@@ -3,7 +3,7 @@
        <div class="screen">
              <div class="login-screen background-secundary">
                 <div class="login-logo"><h1 class="title-logo"><a href="../index.html"> Blog Masters </a></h1></div>
-                <form action="<?php echo 'http://'. APP_HOST?>user/dashboard" method="POST">
+                <form action="<?php echo 'http://'. APP_HOST?>user/verify" method="POST">
                     <fieldset>
                         <legend hidden>Dados De login</legend>
                         <div class="form-div">
