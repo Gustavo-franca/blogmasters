@@ -13,23 +13,31 @@
             header('Location: http://'.APP_HOST); // ao redirecionar a url o htaccess renvia os dados para o index indo para a home
 
         }
-        public function dashboard(){
+        public function verify(){
             if(isset($_POST['nEmail']) && isset($_POST['nPassword'])){
                 $user = new user();
                 $user->setEmail($_POST['nEmail']);
                 $user->setpassword($_POST['nPassword'],$_POST['nPassword']);
                 if($user->login()){
-                    Session::setMessage("Bem vindo ".$user->getfistName()." ".$user->getlastName());
-                    $this->render('user/dashboard');
-                    return;
+                    Session::setvar('user',array(
+                        'id'=> $user->getid(),
+                        'fistName'=> $user->getfistName(),
+                        'lastName'=> $user->getlastName(),
+                        'email' => $user->getemail(),
+                    ));
+                    session_write_close();
+                    header('Status: 301 Moved Permanently', false, 301);
+                    header('Location: http://'.APP_HOST."dashboard");
+                    exit();
                 }else{
-                    $_SESSION['message'] = false;
                     $this->render('user/login');
                     return;
                 }
             }
             Session::setMessage('Opa, Temos um bisbiliotão aqui');
-            $this->render('user/dashboard');
+            Session::showNav(false);
+            $this->render('error/404');
+            Session::clearShowNav();
             Session::clearMessage();
         }
 
