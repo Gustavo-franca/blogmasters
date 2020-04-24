@@ -26,6 +26,7 @@
             define('DB_PASSWORD'    ,"");//password
             define('DB_NAME'        ,"blogmasters");//o banco
             define('DB_DRIVER'      ,"mysql"); // o SGBD
+            
 
             $this->url(); //puxa a url atual
             
